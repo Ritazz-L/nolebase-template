@@ -24,17 +24,17 @@ hero:
       link: https://github.com/nolebase/nolebase
 
 features:
-  - title: 多样的主题和内容
-    details: 本知识库和所生成的页面均由创作者们维护，涉及到生活中各方面知识和内容，也不乏我们的回忆和畅想。
+  - title: 我的日常
+    details: 平衡工作、学习与生活，日常的计划和攻略，还有一些常用网站预存。
     icon: 🌈
-  - title: 皆为 Markdown
-    details: 使用 Markdown 和 Markdown 拓展语法编写和记录笔记，每一个页面都是 Markdown 文件。
+  - title: 观影读书
+    details: 通过影音与文字拓宽认知边界，收获思想共鸣，生活不就是诗和远方。
     icon: 📃
-  - title: 由 VitePress 驱动
-    details: 基于 Vite 的强大静态文档页面生成器，它生成了我们知识库的页面，提供了简单易用的主题和工具。
+  - title: 各种小妙招
+    details: 挖掘小众实用单品，让日常充满惊喜感，设计、软件、生活等各种实践应用，存起来备用。
     icon: 🚀
-  - title: 由 Obsidian 驱动
-    details: 强大的知识库管理工具，支持花样繁多的插件和拓展，让知识管理变得更加简单。
+  - title: 回忆记录
+    details: 用文字 / 影像对抗遗忘，在细节中重新衡量生命重量。
     icon: 🗃
 ---
 
