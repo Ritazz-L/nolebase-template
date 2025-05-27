@@ -16,12 +16,13 @@ export interface Creator {
   emailAliases?: string[]
 }
 
-const getAvatarUrl = (name: string) => `https://github.com/Ritazz-L`
+const getAvatarUrl = (username: string): string =>
+  `https://avatars.githubusercontent.com/u/${username}`
 
 export const creators: Creator[] = [
   {
-    name: '',
-    avatar: '',
+    name: 'ZZBaoa',
+    avatar: 'https://example.com/my-avatar.jpg',
     username: 'ZZBaoa',
     title: 'ZZBaoa 随机爱好匹配中',
     desc: '代码小白爱好者，日常写作，插件分享等',
@@ -32,7 +33,7 @@ export const creators: Creator[] = [
     nameAliases: ['ZZBaoa', '人间臻宝', '龙景茶'],
     emailAliases: ['kranchen@foxmail.com'],
   },
-  
+
 ].map<Creator>((c) => {
   c.avatar = c.avatar || getAvatarUrl(c.username)
   return c as Creator
