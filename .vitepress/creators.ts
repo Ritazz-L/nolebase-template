@@ -23,7 +23,7 @@ export const creators: Creator[] = [
   {
     name: 'ZZBaoa',
     avatar: '',
-    username: 'ZZBaoa',
+    username: 'AOLeomeoww',
     title: '随机爱好匹配中',
     desc: '代码小白爱好者，日常写作，插件分享，设计建模等',
     links: [
