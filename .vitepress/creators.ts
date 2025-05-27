@@ -22,7 +22,7 @@ const getAvatarUrl = (username: string): string =>
 export const creators: Creator[] = [
   {
     name: 'ZZBaoa',
-    avatar: 'https://example.com/my-avatar.jpg',
+    avatar: '',
     username: 'ZZBaoa',
     title: 'ZZBaoa 随机爱好匹配中',
     desc: '代码小白爱好者，日常写作，插件分享等',
