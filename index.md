@@ -2,13 +2,13 @@
 layout: home
 sidebar: false
 
-title: Nólëbase
-titleTemplate: 记录回忆，知识和畅想的地方
+title: ZZBaoa
+titleTemplate: 记录回忆，记录生活和知识碎片的地方
 
 hero:
-  name: g~Nj$3J2^
-  text: 记录回忆，知识和畅想的地方
-  tagline: 以 Nólëbase 为名，读作 nole-base，取自意为「知识」的昆雅语 nólë 和意为「基础」的英文 base，即「知识库」
+  name: ZZbaoa
+  text: 记录回忆，记录生活和知识碎片的地方
+  tagline: ZZBAOA~人间臻宝哦
   image:
     src: /logo.svg
     alt: Vitest
