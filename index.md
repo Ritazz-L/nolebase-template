@@ -15,7 +15,7 @@ hero:
   actions:
     - theme: brand
       text: 开始阅读
-      link: /笔记/
+      link: /笔记/daily/
     - theme: alt
       text: 加入 Discord 服务器
       link: https://discord.gg/fArZxf8p
