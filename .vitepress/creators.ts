@@ -30,7 +30,7 @@ export const creators: Creator[] = [
       { type: 'github', icon: 'github', link: 'https://github.com/Ritazz-L' },
       { type: 'discord', icon: 'discord', link: 'https://discord.gg/fArZxf8p' },
     ],
-    nameAliases: ['ZZBaoa', '人间臻宝', '龙景茶'],
+    nameAliases: ['ZZBaoa', 'Ritazz-L', '龙景茶'],
     emailAliases: ['kranchen@foxmail.com'],
   },
 
