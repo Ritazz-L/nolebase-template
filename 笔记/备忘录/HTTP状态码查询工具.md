@@ -5,52 +5,52 @@ tags:
 ---
 >了解所有 HTTP 状态码的含义，助您更好地进行 Web 开发
 ## 100
-==continue==
+continue
 继续，客户端应继续其请求
 ## 101
-==Switching Protocols==
+Switching Protocols
 切换协议。服务器根据客户端的请求切换协议
 ## 102
-==Processing==
+Processing
 处理中。服务器正在处理请求，但无响应可用
 ## 103
-==Early Hints==
+Early Hints
 早期提示。用来在最终的 HTTP 消息之前返回一些响应头
 ## 200
-==OK==
+OK
 请求成功。一般用于GET与POST请求
 ## 201
-==Created==
+Created
 已创建。成功请求并创建了新的资源
 ## 202
-==Accepted==
+Accepted
 已接受。已经接受请求，但是未处理完成
 ## 203
-==Non-Authoritative Information==
+Non-Authoritative Information
 非授权信息。请求成功，但返回的信息可能来自另一来源
 ## 204
-==No Content==
+No Content
 无内容。服务器成功处理，但未返回内容
 ## 205
-==Reset Content==
+Reset Content
 重置内容。服务器处理成功，用户终端应重置文档视图
 ## 206
-==Partial Content==
+Partial Content
 部分内容。服务器成功处理了部分GET请求
 ## 207
-==Multi-Status==
+Multi-Status
 多状态。代表之后的消息体是一个XML消息
 ## 208
-==Already Reported==
+Already Reported
 已报告。DAV绑定的成员已在（多状态）响应之前的部分被列举
 ## 226
-==IM Used==
+IM Used
 实用IM。服务器已经完成了对资源的GET请求
 ## 300
-==Multiple Choices==
+Multiple Choices
 多种选择。请求的资源可包括多个位置
 ## 301
-==Moved Permanently==
+Moved Permanently
 永久移动。请求的资源已被永久移动到新位置
 ## 302
 ==Found==
