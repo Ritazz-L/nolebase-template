@@ -94,6 +94,7 @@ html, body {
 .VPHomeHero > .container > .main > h1 {
   font-size: 5rem;
   font-family: 'Simhei', sans-serif;/*黑体*/
+  font-weight: 600;
 }
 
 /* 首页子标题样式 */
