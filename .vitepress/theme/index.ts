@@ -148,36 +148,27 @@ const ExtendedTheme: Theme = {
     // Get frontmatter and route
     const { frontmatter } = toRefs(useData());
     const route = useRoute();
-    
+
     // Obtain configuration from: https://giscus.app/
     giscusTalk({
-      repo: 'Jackiexiao/nolebase-template',
-      repoId: 'R_kgDOL5WHsg',
-      category: 'Announcements', // default: `General`
-      categoryId: 'DIC_kwDOL5WHss4CfTYs',
-      mapping: 'url', // default: `pathname`
-      inputPosition: 'top', // default: `top`
-      lang: 'zh-CN', // default: `zh-CN`
-      // i18n setting (Note: This configuration will override the default language set by lang)
-      // Configured as an object with key-value pairs inside:
-      // [your i18n configuration name]: [corresponds to the language pack name in Giscus]
+      repo: 'Ritazz-L/nolebase-template',         // 你的仓库地址
+      repoId: 'R_kgDOOxGZ7g',                     // 你的仓库 ID（来自查询）
+      category: 'General',                         // 推荐使用 General 分类（或你喜欢的其他分类名）
+      categoryId: 'DIC_kwDOL5WHss4CfTYt',          // 与上面 category 对应的 ID
+      mapping: 'pathname',                         // 推荐使用 pathname 映射方式
+      inputPosition: 'top',                        // 评论框位置
+      lang: 'zh-CN',                              // 默认语言
       locales: {
-          'zh-Hans': 'zh-CN',
-          'en-US': 'en'
+        'zh-Hans': 'zh-CN',
+        'en-US': 'en'
       },
-      homePageShowComment: false, // Whether to display the comment area on the homepage, the default is false
-      lightTheme: 'light', // default: `light`
-      darkTheme: 'transparent_dark', // default: `transparent_dark`
-      // ...
+      homePageShowComment: false,                  // 首页不显示评论
+      lightTheme: 'light',
+      darkTheme: 'transparent_dark',
     }, {
       frontmatter, route
-    },
-      // Whether to activate the comment area on all pages.
-      // The default is true, which means enabled, this parameter can be ignored;
-      // If it is false, it means it is not enabled.
-      // You can use `comment: true` preface to enable it separately on the page.
-      true
-    );
+    }, true)
+
   }
 }
 
