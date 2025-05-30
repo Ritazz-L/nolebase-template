@@ -217,7 +217,7 @@ export default defineConfig({
           { text: '知识分享', link: '/笔记/知识分享.md' },
         ]
       },
-      {text:  '常用资源', link: '/常用资源/常用工具/常用工具导航.md'},
+      {text:  '常用资源', link: '/常用资源/常用工具导航.md'},
       { text: '最近更新', link: '/toc' },
     ],
     sidebar,
