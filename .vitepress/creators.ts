@@ -16,8 +16,9 @@ export interface Creator {
   emailAliases?: string[]
 }
 
-const getAvatarUrl = (username: string): string =>
-  `https://avatars.githubusercontent.com/u/${username}`
+function getAvatarUrl(username: string): string {
+  return `https://avatars.githubusercontent.com/u/${username}`
+}
 
 export const creators: Creator[] = [
   {
