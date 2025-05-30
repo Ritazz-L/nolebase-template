@@ -6,7 +6,7 @@ title: ZZBaoa
 titleTemplate: 记录回忆，记录生活和知识碎片的地方
 
 hero:
-  name: ZZbaoa
+  name: ZZBAOA
   text: 记录回忆，记录生活和知识碎片的地方
   tagline: ZZBAOA~人间臻宝哦
   image:
