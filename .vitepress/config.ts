@@ -229,18 +229,25 @@ export default defineConfig({
     },
     math: true,
     config: (md) => {
-      md.use(MarkdownItFootnote)
+      // 先处理数学公式
       md.use(MarkdownItMathjax3)
-      md.use(BiDirectionalLinks({
-        dir: process.cwd(),
-      }))
+
+      // 然后处理双向链接
+      md.use(BiDirectionalLinks({ dir: process.cwd() }))
+
+      // 图片相关插件
       md.use(UnlazyImages(), {
         imgElementTag: 'NolebaseUnlazyImg',
       })
+
+      // 行内链接预览
       md.use(InlineLinkPreviewElementTransform, {
         tag: 'VPNolebaseInlineLinkPreview',
       })
-    },
+
+      // 脚注放在最后
+      md.use(MarkdownItFootnote)
+  },
   },
   async buildEnd(siteConfig) {
     await buildEndGenerateOpenGraphImages({
