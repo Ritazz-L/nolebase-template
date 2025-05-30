@@ -18,7 +18,7 @@ export interface Creator {
 
 function getAvatarUrl(username: string): string {
   // 假设你本地有对应用户名的 .png 文件
-  return `./public/avatars/${username}.jpg`
+  return `/avatars/${username}.jpg`
 }
 
 export const creators: Creator[] = [
