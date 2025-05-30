@@ -212,10 +212,9 @@ export default defineConfig({
       {
         text: '笔记',
         items: [
-          { text: '日常记录', link: '/笔记/daily/' },
+          { text: '日常记录', link: '/笔记/我的日常.md' },
           { text: '观影读书', link: '/笔记/观影读书.md' },
           { text: '知识分享', link: '/笔记/知识分享.md' },
-          { text: '备忘录', link: '/笔记/备忘录/' },
         ]
       },
       { text: '最近更新', link: '/toc' },
