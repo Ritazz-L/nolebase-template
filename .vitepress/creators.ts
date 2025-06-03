@@ -17,14 +17,14 @@ export interface Creator {
 }
 
 function getAvatarUrl(username: string): string {
-  // 假设你本地有对应用户名的 .png 文件
-  return `/avatars/${username}.jpg`
+  // 使用正确的路径格式，指向 public/ 目录下的文件
+  return `/${username}.jpg`;
 }
 
 export const creators: Creator[] = [
   {
     name: 'AOLeomeoww',
-    avatar: 'my-avator.jpg',
+    avatar: '/AOLeomeoww.jpg',
     username: 'AOLeomeoww',
     title: '随机爱好匹配中',
     desc: '代码小白爱好者，日常写作，插件分享，设计建模等',
