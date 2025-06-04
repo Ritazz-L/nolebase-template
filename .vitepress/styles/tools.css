@@ -39,7 +39,7 @@
 .tool-card:hover,
 .tool-card:active {
   text-decoration: none !important;
-  color: #1890ff !important;
+  color: #404042 !important;
 }
 
 /* 强制清除子元素的继承样式干扰 */
