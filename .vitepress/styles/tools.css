@@ -32,16 +32,24 @@
   border: 1px solid var(--card-border);
 }
 
+/* 移除所有 .tool-card 下的链接下划线和颜色干扰 */
 .tool-card,
 .tool-card:link,
-.tool-card:visited {
-  text-decoration: none;
-  color: #1890ff;
+.tool-card:visited,
+.tool-card:hover,
+.tool-card:active {
+  text-decoration: none !important;
+  color: #1890ff !important;
 }
 
-.tool-card:hover {
-  color: #409eff;
+/* 强制清除子元素的继承样式干扰 */
+.tool-card-content,
+.tool-card-content span,
+.tool-card-content p {
+  text-decoration: none !important;
+  color: inherit !important;
 }
+
 
 .tool-card:active,
 .card:active {
