@@ -1,71 +1,113 @@
-/* 工具导航卡片样式 */
-.card-container {
+/* 工具导航卡片基础样式 */
+:root {
+  --card-bg: #fff;
+  --card-border: #e0e0e0;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-gap: 16px;
+  --card-radius: 12px;
+  --card-hover-bg: #f5f5f5;
+}
+
+.card-container,
+.tool-card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 16px;
+  gap: var(--card-gap);
+  margin: 0 -var(--card-gap); /* 抵消首尾空白间隙 */
 }
 
-.card {
-  background-color: #fff;
-  padding: 16px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  flex: 0 0 calc(33.333% - 16px);
+.card,
+.tool-card {
+  background-color: var(--card-bg);
+  padding: var(--card-gap);
+  border-radius: var(--card-radius);
+  box-shadow: 0 4px 12px var(--card-shadow);
+  flex: 0 0 calc(33.333% - calc(var(--card-gap) * 2 / 3));
   display: flex;
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
   color: inherit;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
-  border: 1px solid #e0e0e0;
+  border: 1px solid var(--card-border);
 }
 
+.tool-card:hover,
 .card:hover {
-  background-color: #f5f5f5;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: var(--card-hover-bg);
+  box-shadow: 0 4px 12px var(--card-shadow);
 }
 
+.tool-card:active,
 .card:active {
   transform: scale(0.99);
 }
 
+.tool-card:focus-visible,
 .card:focus-visible {
   outline: none;
 }
 
-.card-icon {
-  margin-right: 16px;
+.card-icon,
+.tool-card-icon {
+  margin-right: var(--card-gap);
   display: flex;
   align-items: center;
   flex-shrink: 0;
 }
 
-.card-icon img {
+.card-icon img,
+.tool-card-icon img {
   width: 40px;
   height: 40px;
 }
 
-.card-content {
+.card-content,
+.tool-card-content {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
 .card-content span,
-.card-content p {
+.card-content p,
+.tool-card-content span,
+.tool-card-content p {
   text-decoration: none !important;
   color: #333;
 }
 
-.card-content span {
+.card-content span,
+.tool-card-content span {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 8px;
 }
 
-.card-content p {
+.card-content p,
+.tool-card-content p {
   font-size: 14px;
   color: #666;
   line-height: 1.5;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .card,
+  .tool-card {
+    flex: 0 0 calc(50% - calc(var(--card-gap) * 1 / 2));
+  }
+}
+
+@media (max-width: 480px) {
+  .card,
+  .tool-card {
+    flex: 0 0 100%;
+  }
+
+  .card,
+  .tool-card {
+    padding: 12px;
+  }
 }
