@@ -33,13 +33,15 @@ import {
   NolebaseUnlazyImg,
 } from '@nolebase/vitepress-plugin-thumbnail-hash/client'
 
-import { creators } from '../creators'
-
+import { creators } from '../creators'// ✅ 正确路径
+// 或者使用别名
+// import ToolCard from '/@components/ToolCard.vue'
 import AppContainer from './components/AppContainer.vue'
 import DocFooter from './components/DocFooter.vue'
 import HomePage from './components/HomePage.vue'
 import Share from './components/Share.vue'
 import TocList from './components/TocList.vue'
+import ToolCard from './components/ToolCard.vue'
 
 import '@nolebase/vitepress-plugin-enhanced-readabilities/client/style.css'
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
@@ -88,6 +90,7 @@ const ExtendedTheme: Theme = {
     app.component('DocFooter', DocFooter)
     app.component('Share', Share)
     app.component('TocList', TocList)
+    app.component('ToolCard', ToolCard)
     app.component('AppContainer', AppContainer)
     app.component('NolebaseUnlazyImg', NolebaseUnlazyImg)
 
