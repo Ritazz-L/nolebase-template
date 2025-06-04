@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: var(--card-gap);
-  margin: 0 -var(--card-gap); /* 抵消首尾空白间隙 */
+  margin: 0 calc(-1 * var(--card-gap)); /* 抵消首尾空白间隙 */
 }
 
 .card,
@@ -28,15 +28,19 @@
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
-  color: inherit;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
   border: 1px solid var(--card-border);
 }
 
-.tool-card:hover,
-.card:hover {
-  background-color: var(--card-hover-bg);
-  box-shadow: 0 4px 12px var(--card-shadow);
+.tool-card,
+.tool-card:link,
+.tool-card:visited {
+  text-decoration: none;
+  color: #1890ff;
+}
+
+.tool-card:hover {
+  color: #409eff;
 }
 
 .tool-card:active,
