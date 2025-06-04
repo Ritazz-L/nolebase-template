@@ -106,7 +106,11 @@
 :root {
   /* 配置一下 tips 的自定义块的颜色为非默认的产品色，避免与文字不兼容导致可读性下降 */
   --vp-custom-block-tip-bg: #def4f4;
-  --vp-custom-block-tip-code-bg: #cbd9dd7d;
+  --vp-custom-block-t.card-content span,
+.card-content p {
+  text-decoration: none !important;
+}
+ip-code-bg: #cbd9dd7d;
 }
 
 .dark:root {
@@ -116,5 +120,5 @@
 }
 
 :root {
-  --vp-nolebase-highlight-targeted-heading-bg: rgba(253, 216, 95, 0.31);
+  --vp-nolebase-highlight-targeted-heading-bg: rgba(248, 225, 221, 0.31);
 }
