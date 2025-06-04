@@ -47,8 +47,11 @@ export default defineConfig({
       href: '/logo.svg',
       type: 'image/svg+xml',
     }],
-    [
-      'link',
+    ['link', {
+      rel: 'stylesheet',
+      href: '/styles/tools.css'
+  }],
+      ['link',
       {
         rel: 'alternate icon',
         href: '/favicon.ico',
