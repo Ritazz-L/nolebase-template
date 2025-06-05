@@ -8,6 +8,7 @@ import { PageProperties, PagePropertiesMarkdownSection } from '@nolebase/vitepre
 import { ThumbnailHashImages } from '@nolebase/vitepress-plugin-thumbnail-hash/vite'
 
 import { githubRepoLink } from './metadata'
+import {GitChangelogMarkdownSection} from "@nolebase/vitepress-plugin-git-changelog";
 
 export default defineConfig(async () => {
   return {
@@ -24,18 +25,18 @@ export default defineConfig(async () => {
       GitChangelog({
         repoURL: () => githubRepoLink,
       }),
-      // GitChangelogMarkdownSection({
+       GitChangelogMarkdownSection({
       //   getChangelogTitle: (): string => {
       //     return '更新历史'
       //   },
-      //   getContributorsTitle: (): string => {
-      //     return '贡献者'
-      //   },
-      //   excludes: [
-      //     'toc.md',
-      //     'index.md',
-      //   ],
-      // }),
+         getContributorsTitle: (): string => {
+           return '贡献者'
+         },
+         excludes: [
+           'toc.md',
+           'index.md',
+         ],
+       }),
       PageProperties(),
       PagePropertiesMarkdownSection({
         excludes: [
