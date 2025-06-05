@@ -1,5 +1,5 @@
-import type { Theme } from 'vitepress'
-import DefaultTheme from 'vitepress/theme'
+import type { App } from 'vue';
+import DefaultTheme from 'vitepress/theme';
 import giscusTalk from 'vitepress-plugin-comment-with-giscus';
 import { useData, useRoute } from 'vitepress';
 import { toRefs } from "vue";
@@ -21,9 +21,9 @@ import {
 } from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
 
 import {
-  InjectionKey as NolebaseGitChangelogInjectionKey,
-  NolebaseGitChangelogPlugin,
-} from '@nolebase/vitepress-plugin-git-changelog/client'
+   InjectionKey as NolebaseGitChangelogInjectionKey,
+   NolebaseGitChangelogPlugin,
+ } from '@nolebase/vitepress-plugin-git-changelog/client'
 
 import {
   NolebasePagePropertiesPlugin,
@@ -38,6 +38,7 @@ import { creators } from '../creators'// ✅ 正确路径
 // import ToolCard from '/@components/ToolCard.vue'
 import AppContainer from './components/AppContainer.vue'
 import DocFooter from './components/DocFooter.vue'
+import Contributors from './components/Contributors.vue'
 import HomePage from './components/HomePage.vue'
 import Share from './components/Share.vue'
 import TocList from './components/TocList.vue'
@@ -52,21 +53,18 @@ import '@nolebase/vitepress-plugin-thumbnail-hash/client/style.css'
 import '@nolebase/vitepress-plugin-enhanced-mark/client/style.css'
 
 import 'virtual:uno.css'
-
 import '../styles/main.css'
 import '../styles/vars.css'
 
 import('@nolebase/vitepress-plugin-inline-link-preview/client')
 
-const ExtendedTheme: Theme = {
+const ExtendedTheme = {
   extends: DefaultTheme,
   Layout: () => {
     return h(DefaultTheme.Layout, null, {
-      // https://vitepress.dev/guide/extending-default-theme#layout-slots
-      'doc-top': () => [
-        h(NolebaseHighlightTargetedHeading),
-      ],
+      'doc-top': () => [h(NolebaseHighlightTargetedHeading)],
       'doc-footer-before': () => [
+        h(Contributors),
         h(DocFooter),
       ],
       'nav-bar-content-after': () => [
@@ -78,22 +76,18 @@ const ExtendedTheme: Theme = {
       ],
     })
   },
-  enhanceApp({ app }) {
-    /**
-     * Have to manually import and register the essential components that needed during build globally.
-     *
-     * Learn more at: Warn `Hydration completed but contains mismatches.` and Custom components are not rendered · Issue #1918 · vuejs/vitepress
-     * https://github.com/vuejs/vitepress/issues/1918
-     */
-
+  enhanceApp({ app }: { app: App }) {
+    // 注册全局组件
     app.component('HomePage', HomePage)
     app.component('DocFooter', DocFooter)
     app.component('Share', Share)
     app.component('TocList', TocList)
     app.component('ToolCard', ToolCard)
     app.component('AppContainer', AppContainer)
+    app.component('Contributors', Contributors)
     app.component('NolebaseUnlazyImg', NolebaseUnlazyImg)
 
+    // 增强阅读体验插件
     app.provide(NolebaseEnhancedReadabilitiesInjectionKey, {
       layoutSwitch: {
         defaultMode: NolebaseEnhancedReadabilitiesLayoutMode.SidebarWidthAdjustableOnly,
@@ -104,12 +98,14 @@ const ExtendedTheme: Theme = {
       },
     })
 
+    // 映射贡献者
     app.provide(NolebaseGitChangelogInjectionKey, {
       mapContributors: creators,
     })
 
+    // 使用插件
     app.use(NolebaseInlineLinkPreviewPlugin)
-    app.use(NolebaseGitChangelogPlugin)//git历史
+    app.use(NolebaseGitChangelogPlugin) // 只保留 Git 数据注入（如 lastUpdated）
     app.use(NolebasePagePropertiesPlugin<{
       tags: string[]
       progress: number
@@ -148,9 +144,8 @@ const ExtendedTheme: Theme = {
     })
   },
   setup() {
-    // Get frontmatter and route
-    const { frontmatter } = toRefs(useData());
-    const route = useRoute();
+    const { frontmatter } = toRefs(useData())
+    const route = useRoute()
 
     // Obtain configuration from: https://giscus.app/
     giscusTalk({
