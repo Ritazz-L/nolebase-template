@@ -38,6 +38,7 @@ import { creators } from '../creators'// ✅ 正确路径
 // import ToolCard from '/@components/ToolCard.vue'
 import AppContainer from './components/AppContainer.vue'
 import DocFooter from './components/DocFooter.vue'
+import Contributors from './components/Contributors.vue'
 import HomePage from './components/HomePage.vue'
 import Share from './components/Share.vue'
 import TocList from './components/TocList.vue'
@@ -63,6 +64,7 @@ const ExtendedTheme = {
     return h(DefaultTheme.Layout, null, {
       'doc-top': () => [h(NolebaseHighlightTargetedHeading)],
       'doc-footer-before': () => [
+        h(Contributors),
         h(DocFooter),
       ],
       'nav-bar-content-after': () => [
@@ -77,6 +79,7 @@ const ExtendedTheme = {
   enhanceApp({ app }: { app: App }) {
     // 注册全局组件
     app.component('HomePage', HomePage)
+    app.component('Contributors', Contributors)
     app.component('DocFooter', DocFooter)
     app.component('Share', Share)
     app.component('TocList', TocList)
