@@ -27,10 +27,12 @@ export default defineConfig(async () => {
         repoURL: () => githubRepoLink,
       }),
         GitChangelogMarkdownSection({
-
           getContributorsTitle: () => '贡献者',
           excludes: ['toc.md', 'index.md'],
-        //  getContributorsTitle: () => '贡献者',
+          //  getContributorsTitle: () => '贡献者',
+          sections: {
+            disableChangelog: true,
+          },     // 隐藏更新历史
         }),
 
       PageProperties(),
