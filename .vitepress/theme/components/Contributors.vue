@@ -29,7 +29,28 @@
 <script lang="ts" setup>
 import { useData } from 'vitepress'
 
-const { page } = useData()
+// 手动扩展 PageData 接口
+interface GitContributor {
+  name: string
+  email: string
+  username: string
+  avatar: string
+}
+
+interface GitData {
+  lastUpdated?: number
+  contributors?: GitContributor[]
+}
+
+interface ExtendedPageData {
+  git?: GitData
+  title: string
+  description: string
+  frontmatter: Record<string, any>
+  relativePath: string
+}
+
+const { page } = useData() as { page: { value: ExtendedPageData } }
 
 const lastUpdated = page.value.git?.lastUpdated
 const contributors = page.value.git?.contributors || []
