@@ -33,10 +33,6 @@ export default defineConfig(async () => {
        //   getContributorsTitle: (): string => {
        //     return '贡献者'
        //   },
-          excludes: [
-            'toc.md',
-            'index.md',
-          ],
           getContributorsTitle: () => '贡献者',
         }),
 
