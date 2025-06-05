@@ -142,6 +142,16 @@ export default defineConfig({
       copyright:
         '<a class="footer-cc-link" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a> © 2022-PRESENT Nólëbase 的创作者们',
     },
+    lastUpdated: {
+      text: '最后更新时间',
+      formatOptions: {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false,}
+    },
     search: {
       provider: 'local',
       options: {
