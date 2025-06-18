@@ -120,5 +120,5 @@ not done
 scheduled on tomorrow 
 ```
 
--  [Tasks官方插件说明链接]([Introduction - Tasks User Guide - Obsidian Publish](https://publish.obsidian.md/tasks/Introduction)
+-  [Tasks官方插件说明链接](https://publish.obsidian.md/tasks/Introduction)
 - [shabegom/buttons的github链接](https://github.com/shabegom/buttons)
