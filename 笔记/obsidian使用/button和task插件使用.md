@@ -5,9 +5,12 @@
 ### 基础设置
 可以在obsidian第三方插件下载安装，也可以直接到作者的github里下载。
 #### 创建按钮
+
 `ctrl + p`打开命令面板，输入`button`，选择`button maker`就可以创建了。
+
 ![[笔记/obsidian使用/创建按钮.png]]
 ![[笔记/obsidian使用/按钮列表.png]]
+
 日常的基础配置只需要设置好四个就可以：名字、类型、id、颜色。、
 类型基本上常用的就是`command`命令、`link`网址、`template`模板和`calculate`计算这四种。
 #### 如何使用
@@ -58,11 +61,15 @@ action 模板
 ### 功能
 #### 1.创建任务
 通过快捷键`ctrl + p` 命令行输入task，选择`create or edit task`创建任务。
+
 ![[笔记/obsidian使用/命令行输入任务插图.png]]![[笔记/obsidian使用/task创建页面.png]]
+
 可以根据需求，创建和计划当天或是本周的任务。
 也可以设置obsidian的快捷键，把当前的行内容转换成待办内容。
+
 ![[笔记/obsidian使用/转换待办内容.png]]
 #### 2.查询任务
+
 在创建的笔记中，可以通过tasks插件提供的代码块来查询相关任务，并集中显示。
 ##### 常用语法
 - `done`  已完成
@@ -113,3 +120,5 @@ not done
 scheduled on tomorrow 
 ```
 
+-  [Tasks官方插件说明链接]([Introduction - Tasks User Guide - Obsidian Publish](https://publish.obsidian.md/tasks/Introduction))
+- [shabegom/buttons的github链接](https://github.com/shabegom/buttons)
