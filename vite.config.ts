@@ -9,7 +9,7 @@ import { ThumbnailHashImages } from '@nolebase/vitepress-plugin-thumbnail-hash/v
 
 import { githubRepoLink } from './metadata'
 import {GitChangelogMarkdownSection} from "@nolebase/vitepress-plugin-git-changelog";
-//import {GitChangelogMarkdownSection} from "@nolebase/vitepress-plugin-git-changelog";
+// import {GitChangelogMarkdownSection} from "@nolebase/vitepress-plugin-git-changelog";
 
 export default defineConfig(async () => {
   return {
