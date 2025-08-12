@@ -8,7 +8,7 @@ import fg from 'fast-glob'
 import Git from 'simple-git'
 import matter from 'gray-matter'
 import uniq from 'lodash/uniq'
-import TagsAlias from '../.vitepress/docsTagsAlias.json'
+import TagsAlias from '../.vitepress/docsMetadata.json'
 import type { ArticleTree, DocsMetadata, DocsTagsAlias, Tag } from './types/metadata'
 
 const dir = './'
@@ -210,7 +210,7 @@ function findTagAlias(tag: string, docsMetadata: DocsMetadata, aliasMapping: Doc
     }
   })
 
-  // 在 docsTagsAlias.json 中进行查找和筛选
+  // 在 docsMetadata.json 中进行查找和筛选
   for (const aliasTag of aliasMapping) {
     // 如果人工编撰的的 aliasTag.name 是当前 tag 的别名
     // 那么这意味着 aliasTag.name 和 aliasTag.alias 中的所有 alias 都是当前 tag 的别名
