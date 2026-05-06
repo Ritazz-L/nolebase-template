@@ -30,7 +30,6 @@ node_modules
 # VitePress
 
 **/.vitepress/dist
-**/.vitepress/docsMetadata.json
 **/.vitepress/cache/
 
 # Netlify

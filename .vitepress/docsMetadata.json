@@ -1,0 +1,308 @@
+{
+  "docs": [
+    {
+      "relativePath": "常用资源/尚未编写完成的页面.md",
+      "hashes": {
+        "sha256": {
+          "content": "f904482a2f61cde346d302cacd4467b397e5dbdf04fd6cd1746ada14bdd87b21"
+        }
+      }
+    },
+    {
+      "relativePath": "常用资源/常用工具导航.md",
+      "hashes": {
+        "sha256": {
+          "content": "a764963c33fa7da5a0d9545f75ace32918178bb935de761dec185cda010cf509"
+        }
+      }
+    },
+    {
+      "relativePath": "常用资源/未添加标签的页面.md",
+      "hashes": {
+        "sha256": {
+          "content": "85c30fe78657286d609530b8f1cec46b9d3096340fa0d30d015015c3c0f4bf7f"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/Java基础/函数.md",
+      "hashes": {
+        "sha256": {
+          "content": "ceb483495868cf9ade44e7f352aa34fb25afc36b1b407e4adfc144a0d9a7847e"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/Java基础/数据类型.md",
+      "hashes": {
+        "sha256": {
+          "content": "3a561ea06ff9c3e7c92aadbc357644414d7c501bb8477d8f8fd83a920617e94b"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/Java基础/数组.md",
+      "hashes": {
+        "sha256": {
+          "content": "ac2d615d71711c8e451c3c1b8e26a20cd3f6762e5979710450acc1f64e8b41af"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/Java基础/程序控制.md",
+      "hashes": {
+        "sha256": {
+          "content": "b494eb747748970b63c8a2e0f6c68f3a4054506043f000c3cce2eed4b963a70a"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/Java基础/类型转换.md",
+      "hashes": {
+        "sha256": {
+          "content": "674985e9d5eb86e38f88ae9b368faf166173e5464cdf5515647c18ffc3c251d8"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/Java基础/面向对象编程.md",
+      "hashes": {
+        "sha256": {
+          "content": "8ae1d65ef782df62e46e3a8f37cb98dbe3bac27df8e83115df05b34f7a426fcf"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/obsidian使用/button和task插件使用.md",
+      "hashes": {
+        "sha256": {
+          "content": "b92a0f4e9ef0276cfed42670bc0191a6f3918bd2d89d7eef837da2780ba42f5f"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/书籍阅读.md",
+      "hashes": {
+        "sha256": {
+          "content": "eb9a78d3917361fdf9a929eb3662435711bda544faef0857021ae5f386cc4bfc"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/在线笔记.md",
+      "hashes": {
+        "sha256": {
+          "content": "a049075fc9d315ae84c9dc72aa58b1480150d98d660aed27d6ef8cbd5a42cdfb"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/基础文档/HTTP状态码查询工具.md",
+      "hashes": {
+        "sha256": {
+          "content": "ee75b5d7c8e0080536e60846e993fb4986436e32f2b8a96da525d95b99631481"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/我的日常.md",
+      "hashes": {
+        "sha256": {
+          "content": "0e5fd243674d99212bc2128e0ee62b7a84462ead3257aa537534b053617b4920"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/日常笔记/塔罗/塔罗历史.md",
+      "hashes": {
+        "sha256": {
+          "content": "a06756f16cff48a8382da0f02889752779ef98809a75955a20cf2dc4f10ac6d4"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/日常笔记/塔罗/韦特系卡牌简单释义.md",
+      "hashes": {
+        "sha256": {
+          "content": "adaf09a8442a9e61fc5f4bf5ea54e511b068c863a56b645f9628a0d73861d285"
+        }
+      }
+    },
+    {
+      "relativePath": "笔记/知识分享.md",
+      "hashes": {
+        "sha256": {
+          "content": "b80650193f4e8a3c9d4cef218cdb53cf84f47660a98a69ef2b87bcce17a7a8a8"
+        }
+      }
+    }
+  ],
+  "sidebar": [
+    {
+      "index": "基础文档",
+      "text": "基础文档",
+      "collapsed": true,
+      "items": [
+        {
+          "index": "HTTP状态码查询工具",
+          "text": "HTTP状态码查询工具",
+          "link": "/笔记/基础文档/HTTP状态码查询工具",
+          "lastUpdated": 1748587688000
+        }
+      ]
+    },
+    {
+      "index": "日常笔记",
+      "text": "日常笔记",
+      "collapsed": true,
+      "items": [
+        {
+          "index": "塔罗",
+          "text": "塔罗",
+          "collapsed": true,
+          "items": [
+            {
+              "index": "塔罗历史",
+              "text": "塔罗历史",
+              "link": "/笔记/日常笔记/塔罗/塔罗历史",
+              "lastUpdated": 1751433419000
+            },
+            {
+              "index": "韦特系卡牌简单释义",
+              "text": "韦特系卡牌简单释义",
+              "link": "/笔记/日常笔记/塔罗/韦特系卡牌简单释义",
+              "lastUpdated": 1778047913000
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "index": "Java基础",
+      "text": "Java基础",
+      "collapsed": true,
+      "items": [
+        {
+          "index": "程序控制",
+          "text": "程序控制",
+          "link": "/笔记/Java基础/程序控制",
+          "lastUpdated": 1749621105000
+        },
+        {
+          "index": "函数",
+          "text": "函数",
+          "link": "/笔记/Java基础/函数",
+          "lastUpdated": 1750060496000
+        },
+        {
+          "index": "类型转换",
+          "text": "类型转换",
+          "link": "/笔记/Java基础/类型转换",
+          "lastUpdated": 1749716801000
+        },
+        {
+          "index": "面向对象编程",
+          "text": "面向对象编程",
+          "link": "/笔记/Java基础/面向对象编程",
+          "lastUpdated": 1750059930000
+        },
+        {
+          "index": "数据类型",
+          "text": "数据类型",
+          "link": "/笔记/Java基础/数据类型",
+          "lastUpdated": 1749541850000
+        },
+        {
+          "index": "数组",
+          "text": "数组",
+          "link": "/笔记/Java基础/数组",
+          "lastUpdated": 1750059930000
+        }
+      ]
+    },
+    {
+      "index": "obsidian使用",
+      "text": "obsidian使用",
+      "collapsed": true,
+      "items": [
+        {
+          "index": "button和task插件使用",
+          "text": "button和task插件使用",
+          "link": "/笔记/obsidian使用/button和task插件使用",
+          "lastUpdated": 1750233529000
+        }
+      ]
+    }
+  ],
+  "tags": [
+    {
+      "name": "视图",
+      "alias": [
+        "视图"
+      ],
+      "appearedInDocs": [
+        "常用资源/尚未编写完成的页面.md",
+        "常用资源/未添加标签的页面.md"
+      ],
+      "description": "",
+      "count": 2
+    },
+    {
+      "name": "软件/Obsidian/插件/Dataview",
+      "alias": [
+        "软件/Obsidian/插件/Dataview"
+      ],
+      "appearedInDocs": [
+        "常用资源/尚未编写完成的页面.md",
+        "常用资源/未添加标签的页面.md"
+      ],
+      "description": "",
+      "count": 2
+    },
+    {
+      "name": "软件/Obsidian/插件",
+      "alias": [
+        "软件/Obsidian/插件"
+      ],
+      "appearedInDocs": [
+        "常用资源/尚未编写完成的页面.md",
+        "常用资源/未添加标签的页面.md"
+      ],
+      "description": "",
+      "count": 2
+    },
+    {
+      "name": "日常",
+      "alias": [
+        "日常"
+      ],
+      "appearedInDocs": [
+        "笔记/书籍阅读.md",
+        "笔记/我的日常.md"
+      ],
+      "description": "",
+      "count": 2
+    },
+    {
+      "name": "知识领域",
+      "alias": [
+        "知识领域"
+      ],
+      "appearedInDocs": [
+        "笔记/在线笔记.md",
+        "笔记/基础文档/HTTP状态码查询工具.md"
+      ],
+      "description": "",
+      "count": 2
+    },
+    {
+      "name": "知识领域/文档工程",
+      "alias": [],
+      "appearedInDocs": [
+        "笔记/知识分享.md"
+      ],
+      "description": "",
+      "count": 1
+    }
+  ]
+}
