@@ -37,6 +37,7 @@ import { creators } from '../creators'// ✅ 正确路径
 // 或者使用别名
 // import ToolCard from '/@components/ToolCard.vue'
 import AppContainer from './components/AppContainer.vue'
+import CardContainer from './components/CardContainer.vue'
 import DocFooter from './components/DocFooter.vue'
 import HomePage from './components/HomePage.vue'
 import Share from './components/Share.vue'
@@ -81,6 +82,7 @@ const ExtendedTheme = {
     app.component('Share', Share)
     app.component('TocList', TocList)
     app.component('ToolCard', ToolCard)
+    app.component('CardContainer', CardContainer)
     app.component('AppContainer', AppContainer)
     app.component('NolebaseUnlazyImg', NolebaseUnlazyImg)
 
