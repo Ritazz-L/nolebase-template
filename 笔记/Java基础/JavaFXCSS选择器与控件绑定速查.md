@@ -34,9 +34,10 @@
 | FlowPane      | javafx.scene.layout.FlowPane       | .flow-pane      | -fx-hgap, -fx-vgap                                 |
 | TilePane      | javafx.scene.layout.TilePane       | .tile-pane      | -fx-hgap, -fx-vgap                                 |
 | AnchorPane    | javafx.scene.layout.AnchorPane     | .anchor-pane    | -fx-background-color, -fx-padding                  |
+
 ## 二、常用CSS属性速查表
 
-### 2.1外观属性
+### 2.1 外观属性
 
 | CSS 属性                | 说明                       | 用法示例                                                            |
 | --------------------- | ------------------------ | --------------------------------------------------------------- |
@@ -50,12 +51,13 @@
 | -fx-border-width      | 设置边框宽度                   | -fx-border-width: 1;                                            |
 | -fx-border-style      | 设置边框样式                   | -fx-border-style: solid dashed;                                 |
 | -fx-border-radius     | 设置边框圆角半径                 | -fx-border-radius: 5;                                           |
-| -fx-padding           | 设置内边距（上 右 下 左）           | -fx-padding: 10 15 10 15;                                       |
+| -fx-padding           | 设置内边距（上 右 下 左）           | -fx-padding: 10 15 10 15;                                       |
 | -fx-effect            | 设置特效（阴影、模糊等）             | -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0, 0, 2); |
-| -fx-shadow            | 非标准属性，通常通过 -fx-effect 实现 | 使用 -fx-effect: dropshadow(...) 代替                               |
-| -fx-glow              | 非标准属性，通常通过 -fx-effect 实现 | 使用 -fx-effect: glow(...) 代替                                     |
+| -fx-shadow            | 非标准属性，通常通过 -fx-effect 实现 | 使用 -fx-effect: dropshadow(...) 代替                               |
+| -fx-glow              | 非标准属性，通常通过 -fx-effect 实现 | 使用 -fx-effect: glow(...) 代替                                     |
 | -fx-blend-mode        | 设置混合模式                   | -fx-blend-mode: multiply;                                       |
-### 2.2布局属性
+
+### 2.2 布局属性
 
 | CSS 属性          | 说明                        | 用法示例                        |
 | --------------- | ------------------------- | --------------------------- |
@@ -69,6 +71,7 @@
 | -fx-spacing     | 设置子节点间距                   | -fx-spacing: 10;            |
 | -fx-fill-height | 是否填充高度（FlowPane/TilePane） | -fx-fill-height: true;      |
 | -fx-fill-width  | 是否填充宽度（FlowPane/TilePane） | -fx-fill-width: true;       |
+
 ### 2.3 状态伪类选择器
 
 | 伪类选择器          | 说明          | 用法示例                                                       |
@@ -83,97 +86,3 @@
 | :last-of-type  | 同类型最后一个子节点  | .list-cell:last-of-type { -fx-border-width: 0; }           |
 | :odd           | 奇数行/项       | .table-row-cell:odd { -fx-background-color: #f9f9f9; }     |
 | :even          | 偶数行/项       | .table-row-cell:even { -fx-background-color: white; }      |
-## 常见样式场景示例
-
-### 1. 圆角渐变按钮样式（含:hover和:pressed状态）
-```
-.gradient-button {  
-    -fx-background-color: linear-gradient(to bottom, #3498db, #2980b9);  
-    -fx-text-fill: white;  
-    -fx-font-size: 14px;  
-    -fx-background-radius: 8;  
-    -fx-padding: 10 24 10 24;  
-    -fx-cursor: hand;  
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 6, 0, 0, 2);  
-}  
-  
-.gradient-button**_:hover_** {  
-    -fx-background-color: linear-gradient(to bottom, #2980b9, #1c6ea4);  
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 3);  
-}  
-  
-.gradient-button**_:pressed_** {  
-    -fx-background-color: linear-gradient(to bottom, #1c6ea4, #155a8a);  
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 3, 0, 0, 1);  
-}
-```
-
-**Java绑定：**
-::: tip
-Button btn = **new** Button("渐变按钮");  
-btn.getStyleClass().add("gradient-button");
-:::
-### 2. 带底部边框的文本输入框（仿Material Design风格）
-
-```
-.material-field {  
-    -fx-background-color: transparent;  
-    -fx-border-color: transparent transparent #bdc3c7 transparent;  
-    -fx-border-width: 0 0 2 0;  
-    -fx-padding: 8 0 8 0;  
-    -fx-font-size: 14px;  
-    -fx-prompt-text-fill: #95a5a6;  
-}  
-  
-.material-field**_:focused_** {  
-    -fx-border-color: transparent transparent #3498db transparent;  
-}  
-  
-.material-field**_:invalid_** {  
-    -fx-border-color: transparent transparent #e74c3c transparent;  
-}
-```
-
-**Java绑定：**
-::: tip
-TextField field = **new** TextField();  
-field.setPromptText("请输入用户名");  
-field.getStyleClass().add("material-field");
-:::
-### 选择器优先级规则
-
-JavaFX CSS 遵循以下优先级顺序（从高到低）：
-
-1. **内联样式**（setStyle()）
-
-2. **ID** **选择器**（#myButton）
-
-3. **类选择器**（.custom-button）
-
-4. **元素/类型选择器**（.button）
-
-```java 示例
-
-_/* 优先级最低：类型选择器 */_  
-.button {  
-    -fx-background-color: gray;  
-}  
-  
-_/* 优先级中等：类选择器 */_  
-.custom-button {  
-    -fx-background-color: blue;  
-}  
-  
-_/* 优先级较高：ID选择器 */_  
-#submitBtn {  
-    -fx-background-color: green;  
-}
-
-Button btn = **new** Button("测试");  
-btn.setId("submitBtn");  
-btn.getStyleClass().add("custom-button");  
-_// 最终背景色为 green（ID选择器胜出）_  
-  
-_// 若添加内联样式，则内联样式胜出：_  
-btn.setStyle("-fx-background-color: red;");
-```
